@@ -17,18 +17,22 @@ using Windows.UI.Xaml.Navigation;
 
 namespace MyNotePad.View
 {
-    public sealed partial class HomePage : UserControl
+    public sealed partial class Login : UserControl
     {
-        public HomePage()
+        public Login()
         {
             this.InitializeComponent();
         }
 
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            Util.Helper.PageHelper.LoadingAnimationSwitch(false);
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Util.Helper.PageHelper.LoadingAnimationSwitch(true);
-            Util.Helper.PageHelper.MainContent.Content = new Login();
-
+            Util.Helper.PageHelper.MainContent.Content = new HomePage();
         }
     }
 }
