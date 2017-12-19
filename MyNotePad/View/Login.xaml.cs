@@ -26,13 +26,6 @@ namespace MyNotePad.View
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            Util.Helper.PageHelper.LoadingAnimationSwitch(false);
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Util.Helper.PageHelper.MainContent.Content = new HomePage();
         }
     }
 }

@@ -10,7 +10,6 @@
     d:DesignWidth="400" Loaded="UserControl_Loaded">
 
     <Grid>
-        <TextBlock>login</TextBlock>
-        <Button Click="Button_Click">bbb</Button>
+
     </Grid>
 </UserControl>

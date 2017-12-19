@@ -23,12 +23,5 @@ namespace MyNotePad.View
         {
             this.InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Util.Helper.PageHelper.LoadingAnimationSwitch(true);
-            Util.Helper.PageHelper.MainContent.Content = new Login();
-
-        }
     }
 }

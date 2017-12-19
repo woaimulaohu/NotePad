@@ -28,10 +28,9 @@ namespace MyNotePad
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            Util.Helper.PageHelper.radBusyIndicator = this.loadingAnimation;
             Util.Helper.PageHelper.MainContent = this.MainContent;
+            Util.Helper.PageHelper.radBusyIndicator = this.loadingAnimation;
             Util.Helper.PageHelper.MainContent.Content = new Login();
         }
-
     }
 }
