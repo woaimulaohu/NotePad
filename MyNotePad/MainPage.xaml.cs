@@ -30,7 +30,7 @@ namespace MyNotePad
         {
             Util.Helper.PageHelper.MainContent = this.MainContent;
             Util.Helper.PageHelper.radBusyIndicator = this.loadingAnimation;
-            Util.Helper.PageHelper.MainContent.Content = new Login();
+            Util.Helper.PageHelper.RedirectTo(new Login());
         }
     }
 }

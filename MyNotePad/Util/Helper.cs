@@ -18,6 +18,10 @@ namespace MyNotePad.Util
             {
                 radBusyIndicator.IsActive = isShow;
             }
+            public static void RedirectTo(object page)
+            {
+                MainContent.Content = page;
+            }
         }
     }
 }
